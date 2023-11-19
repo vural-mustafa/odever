@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="HTML ile Uygulamalar">
+        <meta name="keywords" content="Alışveriş Listesi,İkinci dereceden denklem,Mehmet Akif Ersoyu Tanıyalım,CV">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML ile küçük Uygulamalar</title>
+        
+    </head>
+    <body>
+        <!--Form ve Table Etikeini kullanrak Uygulama-->
+        <form >
+            <table border="1">
+                <caption>Alışveriş Listesi</caption>
+                <tr><td>Sebze</td><td>Domates</td></tr>
+                <tr><td>Temel Gıda</td><td>Ekmek</td></tr>
+                <tr><td>Balık</td><td>Uskumru</td></tr>
+                <tr><td>Süt Ürünleri</td><td>Yoğurt</td></tr>
+                <tr><td>Atıştırmalık</td><td>Bisküvi</td></tr>
+            </table>
+        </form>
+
+        <!--Metin Biçimlendime Uygulama-1-->
+        <h1>İkinci Derceden Denklemin Gösterimi</h1>
+        <p>ax<sup>2</sup>+bx+c=0</p>
+
+        <!--Metin Biçimlendirme,Link ve Resim Kullanımı-->
+        <h1>Mehmet Akif Ersoy Kimdir</h1>
+        <img src="https://www.mmo.org.tr/sites/default/files/gonderi_gorselleri/m.akif%20ersoy%20arka.jpg" alt="resim" width="300" title="Mehmet Akif Ersoy">
+        <p style="font-size: 20px;"><strong>1873</strong> yılında <mark>İstabul Fatih'in Sarıgüzel</mark> dünyaya gelen Mehmet Akif Ersoy'a<br>
+        babası Mehmet Tahir Efendi,<u> ebced hesabıyla</u> doğum tarihini belirten “Ragif” adını verdi.<br>
+        <mark>(hicri 1290)</mark> ve vefatına kadar onu bu adla çağırdı. Ancak bu isim, yaygın olmadığı ve güç<br>
+        söylendiği için annesi ve yakın çevresi, daha bilinen bir ad olan “Akif”i kullandılar.</p>
+        <a href="https://www.hurriyet.com.tr/gundem/mehmet-akif-ersoy-kimdir-mehmet-akif-ersoyun-hayati-40768725">Devamını okumuak için</a><br><br>
+
+        <!--Form Elemanlarını Kullanarak CV oluşturma--> 
+        <form name="kayit" action="kayit.aspx" method="get">
+            <h1>CV'ni Hazırla Bir Adım Önde Ol</h1>
+            <br>
+            <h2>PROFİL</h2>
+            <br>
+            <input type="file" id="dosya" name="dosya"><br>Fotoğraf Yükle<br><br>
+            <label>Ad Soyad:</label><br>
+            <input type="text" required placeholder="Lütfen isminizi giriniz"><br><br>
+            <label>Doğum yeri:</label><br>
+            <input type="text"><br><br>
+            <label>Doğum Tarihi:</label><br>
+            <input type="date"><br><br>
+            <label>Medeni Durum:</label><br>
+            <input type="checkbox">Evli<br><br>
+            <label>Askerlik Durumu:</label><br>
+            <input type="radio" name="asker" id="Yapti"  value="Yaptı" checked>
+            <label>Yaptı</label>
+            <input type="radio" name="asker" id="Yapmadi" value="Yapmadı">
+            <label>Yapmadı</label>
+            <input type="radio" name="asker" id="Tecilli"  value="Tecilli">
+            <label>Tecilli</label><br><br>
+            <label>Sürücü Belgesi</label><br>
+            <input type="radio" name="belge" id="var" value="var" checked>
+            <label>Var</label>
+            <input type="radio" name="belge" id="yok" value="yok">
+            <label>Yok</label><br><br>
+            <label>Sürücü Belgesi Varsa Hangisi:</label><br>
+            <input type="checkbox">
+            <select name="seviye">
+                <option>A</option>
+                <option selected>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>F</option>
+                <option>G</option>
+            </select>
+            <h2>İLETİŞİM</h2>
+            <label>Tel</label><br>
+            <input type="tel" placeholder="0 olmadan giriniz" required ><br><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="Lütfen geçerli bir email giriniz" required><br><br>
+            <label>Adres:</label><br>
+            <textarea rows="7" cols="21" style="resize: none;">Bir adres gir...</textarea><br><br>
+            <h2>EĞİTİM</h2><br>
+            <textarea rows="7" cols="21" style="resize: none;"></textarea><br><br>
+            <h2>DENEYİM</h2>
+            <textarea rows="7" cols="21" style="resize: none;"></textarea><br><br>
+            <h2>HOBİLERİM</h2>
+            <textarea rows="7" cols="21" style="resize: none;"></textarea><br><br>
+            <input type="submit" value="Gönder" style="padding: 17px; font-size: 15px;" >
+            <input type="reset" value="Temizle" style="padding: 17px; font-size: 15px;"> 
+        </form>
+       
+      
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Form Öğreniyorum">
+        <meta name="keywords" content="combobox,resimli onay formu,diğer kullanılmayan Form Elemanları">
+        <title>Form Öğreniyorum</title>
+    </head>
+    <body>
+         <!--Combobox Kullanımı-->
+         <h1>Seçenek Listesi</h1>
+         <form>
+             <select name="İliniz" id="İl">
+                 <option>Adana</option>
+                 <option>Kocaeli</option>
+                 <option>AfyonKarahisar</option>
+                 <option>Konya</option>
+                 <option>Aydın</option>
+                 <option>İzmir</option>
+                 <option selected>İstanbul</option>
+                 <option>Ankara</option>   
+                 <option>Antalya</option>
+             </select>
+             <br><br>
+             <input type="submit" value="Gönder">
+             <input type="reset" value="İptal">
+         </form>
+         <!--Resimli Onay Formu-->
+         <h1>Resimli Onay Formu</h1>
+         <form name="onay" action="onay.php" method="get">
+             <table>
+                 <tr><td>Kullanıcı:</td><td> <input type="text" name="adsoyad" required></td></tr>
+                 <tr><td>Email:</td><td><input type="email" name="email" placeholder="@gmail.com" required></td></tr>
+                 <tr><td>Şifre:</td><td><input type="password" name="password" required></td></tr>
+                 <tr><td><br><input type="image" src="resimler/button.jpg"  width="80"></td></tr>  
+             </table>
+            
+         </form>
+ 
+         <h1>Diğer Kullanılmayan Form Elemanları</h1>
+         <form name="saattarih">
+             Doğum Yılı: <input type="date"><br>
+             Şuanki Saat: <input type="time"><br>
+             Telefon Numarası: <input type="tel"><br>
+             Renk: <input type="color">
+             Arama Motoru:<input type="search">
+         </form>
+    </body>
+</html>

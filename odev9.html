@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Form Öğreniyorum">
+        <meta name="keywords" content="text,email,button,number ve url">
+        <title>Form Öğreniyorum</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/2000px-Flag_of_Turkey.svg.png" type="image/x-icon">   
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+        <form name="kayit" action="kayit.php" method="get">
+            Ad Soyad: <br><input type="text" name="adsoyad" id="idadsoyad"
+            size="20" maxlength="30" required> <!--size 20 karakter genşliği maxlenght  en fazla 30 karakter girilebilir.-->
+            <br>
+            Email: <br><input type="email" name="email" id="email" required>
+            <br>
+            Web Sitesi: <br><input type="url" name="adres" id="adres">
+            <br>
+            Yaşınız:<br> <input type="number" name="number" id="number" required>
+            <br><br>
+            <input type="submit" value="Gönder">
+            <input type="reset" value="Sıfırla">
+
+        </form>
+    </body>
+</html>

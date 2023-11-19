@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Form İşlemleri">
+        <meta name=" keywords" content="Form hizalama,özellikleri">
+        <title>Form</title>
+    </head>
+    <body>
+        <!--Formların Table içinde kolayca hizalanması-->
+        <h1>Üye kayıt Formu </h1>
+        <form name="kayit" action="kayit.aspx" method="get">
+            <table >
+                <tr><td>Ad Soyad:</td><td> <input type="text" name="adsoyad"></td></tr>
+                <tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+                <tr><td></td><td><input type="submit"><input type="reset"></td></tr>
+
+            </table>
+
+        </form>
+
+        <!--Form Özellikleri-->
+        <h1>Form özelliklerini Öğreniyorum</h1>
+        <form autocomplete="on">
+            Ad Soyad: <input type="text" name="adsoyad" id="adsoyad"
+            size="15" maxlength="20" required placeholder="Ad Soyad Gir..."
+            autofocus><br>
+            Email: <input type="text" name="email" id="email" autofocus
+            size="20" maxlength="30" required placeholder="Lütfen email gir.."
+            disabled>
+
+        </form>
+
+        <!--Metin Alanı-->
+        <h1>Metin Alanı</h1>
+        <form autocomplete="on">
+            Ad Soyad <input type="text" name="adsoyad" id="adsoyad" required
+            autofocus placeholder="Ad Soyad gir.." size="15" maxlength="20">
+            <br>
+            Adres:<textarea name="adres" id="adres" autofocus placeholder="Adres gir..."
+            rows="5" cols="15"></textarea>
+            <br>
+            <input type="submit"> <input type="reset"> 
+        </form>
+    </body>
+    </body>
+</html>
